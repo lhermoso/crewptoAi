@@ -49,10 +49,10 @@ class CryptocurrencyAnalysisTasks:
         Ensure the use of up-to-date and accurate data.
       """),
                     agent=agent,
-                    expected_output="A detailed report on the cryptocurrency's tokenomics, comparing supply dynamics, "
-                                    "distribution scheme, utility, and ecosystem incentives with similar projects. "
-                                    "The report should assess the strengths, weaknesses, and market position of the "
-                                    "cryptocurrency's tokenomics."
+                    expected_output=dedent("""A detailed report on the cryptocurrency's tokenomics, comparing supply 
+                    dynamics, distribution scheme, utility, and ecosystem incentives with similar projects. The 
+                    report should assess the strengths, weaknesses, and market position of the cryptocurrency's 
+                    tokenomics.""")
                     )
 
     def blockchain_analysis(self, agent):
@@ -69,10 +69,10 @@ class CryptocurrencyAnalysisTasks:
         {self.__tip_section()}        
       """),
                     agent=agent,
-                    expected_output="An analytical report based on blockchain data analysis, including transaction "
-                                    "volumes, wallet activities, and on-chain metrics. The report should provide "
-                                    "insights into the network's health, security, activity levels, and identify "
-                                    "significant patterns or indicators influencing the cryptocurrency's future."
+                    expected_output=dedent("""An analytical report based on blockchain data analysis, including 
+                    transaction volumes, wallet activities, and on-chain metrics. The report should provide insights 
+                    into the network's health, security, activity levels, and identify significant patterns or 
+                    indicators influencing the cryptocurrency's future.""")
                     )
 
     def investment_recommendation(self, agent):
@@ -92,12 +92,12 @@ class CryptocurrencyAnalysisTasks:
         {self.__tip_section()}
       """),
                     agent=agent,
-                    expected_output="An in-depth investment recommendation report integrating insights from market "
-                                    "research, tokenomics, and blockchain analysis. The report should offer a clear "
-                                    "investment perspective based on market sentiment, technical and fundamental "
-                                    "analysis, and anticipated developments. After finalizing the report, "
-                                    "it should be translated into Brazilian Portuguese to make it accessible to "
-                                    "Portuguese-speaking stakeholders."
+                    expected_output=dedent("""An in-depth investment recommendation report that integrates insights 
+                             from market research, tokenomics, and blockchain analysis. The report should offer a clear 
+                             investment perspective based on market sentiment, technical and fundamental analysis, 
+                             and anticipated developments. It must conclude with a definitive recommendation advising the 
+                             client to either buy, sell, or hold the cryptocurrency. After finalizing the report, it should be 
+                             translated into Brazilian Portuguese to cater to Portuguese-speaking stakeholders.""")
                     )
 
     def __tip_section(self):
