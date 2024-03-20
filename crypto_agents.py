@@ -7,10 +7,14 @@ from crewai_tools import (
     SerperDevTool,
     WebsiteSearchTool
 )
+from langchain.tools.yahoo_finance_news import YahooFinanceNewsTool
+from tools.calculator_tools import CalculatorTools
 
 quote_tool = QuoteTool()
 search_tool = SerperDevTool()
 web_rag_tool = WebsiteSearchTool()
+yahoo_finance_tool = YahooFinanceNewsTool()
+calculator_tool = CalculatorTools()
 
 
 class CryptocurrencyAnalysisAgents:
@@ -28,6 +32,8 @@ class CryptocurrencyAnalysisAgents:
                 quote_tool,
                 search_tool,
                 web_rag_tool,
+                yahoo_finance_tool,
+                calculator_tool
             ]
         )
 
@@ -45,6 +51,8 @@ class CryptocurrencyAnalysisAgents:
                 quote_tool,
                 search_tool,
                 web_rag_tool,
+                yahoo_finance_tool,
+                calculator_tool
             ]
         )
 
@@ -62,5 +70,7 @@ class CryptocurrencyAnalysisAgents:
                 quote_tool,
                 search_tool,
                 web_rag_tool,
+                yahoo_finance_tool,
+                calculator_tool
             ]
         )
