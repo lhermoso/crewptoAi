@@ -14,7 +14,7 @@ quote_tool = QuoteTool()
 search_tool = SerperDevTool()
 web_rag_tool = WebsiteSearchTool()
 yahoo_finance_tool = YahooFinanceNewsTool()
-calculator_tool = CalculatorTools()
+calculator_tool = CalculatorTools.calculate
 
 
 class CryptocurrencyAnalysisAgents:
