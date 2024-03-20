@@ -44,12 +44,12 @@ class CryptoCrew:
 if __name__ == "__main__":
     print("## Bem-vindo à Equipe de Análise Cripto IA")
     print('-------------------------------')
-    company = input(
+    crypto = input(
         dedent("""
            Qual é a criptomoeda que você deseja analisar?
         """))
 
-    cripto_crew = CryptoCrew(company)
+    cripto_crew = CryptoCrew(crypto)
     result = cripto_crew.run()
     print("\n\n########################")
     print("## Aqui está o Relatório")
