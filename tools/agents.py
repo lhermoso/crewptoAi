@@ -1,7 +1,6 @@
 from crewai import Agent
 
 from tools.quote_tools import QuoteTool
-from tools.calculator_tools import CalculatorTools
 
 from crewai_tools import (
 
@@ -32,5 +31,6 @@ class StockAnalysisAgents():
         quote_tool,
         search_tool,
         web_rag_tool,
+        YahooFinanceNewsTool()
       ]
     )
