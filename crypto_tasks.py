@@ -28,7 +28,7 @@ class CryptocurrencyAnalysisTasks:
                     expected_output="A comprehensive report including a summary of recent news, technological "
                                     "advancements, regulatory changes, and significant community events related to "
                                     "the specified cryptocurrency. The report should analyze market sentiment, "
-                                    "its potential impact on the cryptocurrency's value, and include the "
+                                    "its potential impact on the cryptocurrency's value, and it MUST include the "
                                     "cryptocurrency's ticker or symbol."
                     )
 
